@@ -1,12 +1,12 @@
 import React from "react";
 import "./List.css";
 
-export const List =  (props, {children})  => {
+export const MainMuscle =  (props, {children})  => {
   return (
     <div className="list-overflow-container">
-    {props.category}
+    Main Muscle Groups
       <ul className="list-group">
-        {children}
+      
       </ul>
     </div>
   );

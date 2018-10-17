@@ -5,11 +5,10 @@ import Application from "./pages/Scheduler";
 import Detail from "./pages/Detail";
 import Home from "./pages/home";
 import Navbar from "./components/Nav/navbar";
-import DisplayLinks from "./components/Nav/Nav";
 import Signup from './pages/SignupForm';
 import LoginForm from './pages/login-form';
 import axios from "axios";
-import Jumbotron from "./components/Jumbotron";
+//import Jumbotron from "./components/Jumbotron";
 
 class App extends React.Component {
  
@@ -96,7 +95,7 @@ _login(username, password) {
     <div>
     <Navbar _logout={this._logout} loggedIn={this.state.loggedIn} />
       {/*<Nav updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>*/}
-      <Jumbotron></Jumbotron>
+      {/*<Jumbotron></Jumbotron>*/}
       
       <Switch>
       <Route exact path="/" component={Home} />

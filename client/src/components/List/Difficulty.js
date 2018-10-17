@@ -1,12 +1,12 @@
 import React from "react";
 import "./List.css";
 
-export const List =  (props, {children})  => {
+export const Difficulty =  props  => {
   return (
     <div className="list-overflow-container">
-    {props.category}
+    Difficulty
       <ul className="list-group">
-        {children}
+        
       </ul>
     </div>
   );

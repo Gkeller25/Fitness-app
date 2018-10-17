@@ -4,7 +4,7 @@ import CollapseItem from "../../components/Accordion/Collapse.js";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import ExerciseItem from "../../components/Form/ExerciseItem";
-import ModalExample from "../../components/Modal/Modal.js";
+import { List, ListItem, Equipment, Difficulty, Type, MainMuscle, OtherMuscles, DetailMuscle } from "../../components/List";
 import Input from "../../components/Form/Input";
 import FormBtn from "../../components/Form/FormBtn.js";
 import LoadingSpinner from "../../components/Loading/Spinner.js";
@@ -37,7 +37,8 @@ class Exercises extends Component {
       cardiosClicked: false,
       powerliftingsClicked: false,
       reps: "",
-      currentUser: ""
+      currentUser: "",
+      categories: ["Type", "Main Muscle Group", "Other Muscle Groups", "Detailed Muscle Group", "Equipment", "Difficulty"]
     }
     this.btn = React.createRef();
   };
@@ -344,9 +345,17 @@ this.setState({currentUser:id})
 
           <Col size="md-3 sm-12">
 
-            <ModalExample
-              buttonLabel="Button" />
+            {/*<ModalExample
+              buttonLabel="Button" />*/}
 
+<Type></Type>
+<Difficulty></Difficulty>
+              <MainMuscle></MainMuscle>
+           <DetailMuscle></DetailMuscle>
+              <OtherMuscles></OtherMuscles>
+              <Equipment></Equipment>
+
+        
 
             <div className="accordion" id="accordionExample">
 
