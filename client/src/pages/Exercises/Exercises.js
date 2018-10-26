@@ -4,7 +4,13 @@ import CollapseItem from "../../components/Accordion/Collapse.js";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import ExerciseItem from "../../components/Form/ExerciseItem";
-import { List, ListItem, Equipment, Difficulty, Type, MainMuscle, OtherMuscles, DetailMuscle } from "../../components/List";
+//import { List, ListItem, Equipment, Difficulty, Type, MainMuscle, OtherMuscles, DetailMuscle } from "../../components/List";
+import TypesCheckboxList from "../../components/List/TypeList.js";
+import MainMsclCheckboxList from "../../components/List/MainMuscle.js";
+import DtlMsclCheckboxList from "../../components/List/DetailMuscle.js";
+import EquipmentCheckboxList from "../../components/List/Equipment.js";
+import DifficultyCheckboxList from "../../components/List/Difficulty.js";
+import OthMsclCheckboxList from "../../components/List/OtherMuscles.js";
 import Input from "../../components/Form/Input";
 import FormBtn from "../../components/Form/FormBtn.js";
 import LoadingSpinner from "../../components/Loading/Spinner.js";
@@ -348,12 +354,18 @@ this.setState({currentUser:id})
             {/*<ModalExample
               buttonLabel="Button" />*/}
 
-<Type></Type>
-<Difficulty></Difficulty>
+
+<TypesCheckboxList/>
+<MainMsclCheckboxList/>
+<DtlMsclCheckboxList/>
+<OthMsclCheckboxList/>
+<EquipmentCheckboxList/>
+<DifficultyCheckboxList/>
+{/*<Difficulty></Difficulty>
               <MainMuscle></MainMuscle>
            <DetailMuscle></DetailMuscle>
               <OtherMuscles></OtherMuscles>
-              <Equipment></Equipment>
+              <Equipment></Equipment>*/}
 
         
 

@@ -2,6 +2,12 @@ const db = require("../models");
 
 // Defining methods for the ExercisesController
 module.exports = {
+  findExercises: function(req, res) { 
+    db.Exercise
+      .find({}).limit(15)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   findStrength: function(req, res) { 
     db.Exercise
       .find({Type: "Strength"})

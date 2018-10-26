@@ -2,15 +2,16 @@ import axios from "axios";
 
 export default {
   // Gets all exercises
-  getExercises: function(value) {
-    if(value === "Olympic Weight Lifting"){
-      const type = "/olympic";
-      return axios.get("/api/exercises/exercises"+ type);
-    } else {
-      const type = "/"+value.toLowerCase();
-      return axios.get("/api/exercises/exercises"+ type);
-    }
-
+  getExercises: function(//value
+    ) {
+    //if(value === "Olympic Weight Lifting"){
+     // const type = "/olympic";
+     // return axios.get("/api/exercises/exercises"+ type);
+   // } else {
+      //const type = "/"+value.toLowerCase();
+     // return axios.get("/api/exercises/exercises"+ type);
+   // }
+   return axios.get("/api/exercises/exercises");
     
   },
   getCookie: function() {

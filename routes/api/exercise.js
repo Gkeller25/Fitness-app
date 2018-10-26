@@ -2,6 +2,8 @@ const router = require("express").Router();
 const exerciseController = require("../../controllers/exerciseController");
 
 // Matches with "/api/exercises"
+router.route("/exercises")
+  .get(exerciseController.findExercises);
 router.route("/exercises/cardio")
   .get(exerciseController.findCardio);
 router.route("/exercises/olympic")
